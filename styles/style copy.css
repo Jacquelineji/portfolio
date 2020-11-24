@@ -1,0 +1,173 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 24vh;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+.header{
+  margin-bottom: 8em;
+}
+
+.header img{
+  border-radius: 8px;
+}
+/* 
+.my-container, .my-row, .my-col{
+  border: 1px solid #dcdcdc;
+} */
+
+
+#logo {
+  width: 20%;
+  margin-top: -1.6px;
+  /* text-decoration: none;
+  color: #232323;
+  font-size: 20px;
+  font-weight: 500; */
+}
+
+.header img{
+  width: 42vh;
+}
+
+.catchphrase{
+  font-size: 8vh;
+  font-weight: 400;
+  color: #5a5a5a;
+}
+/* .project-block img{
+  width: 80vh;
+} */
+
+.hover {
+  transition: all 0.15s ease-out;
+} 
+
+.card{
+  border: none;
+  box-shadow: 2px 2px 8px rgba(0, 3, 81, 0.1);
+  border-radius: 0;
+}
+
+.hover:hover{
+  box-shadow: 6px 6px 32px rgba(0, 3, 81, 0.2) ;
+  transform: translateY(-4px);
+  /* margin-top: -2px; */
+  /* background: black; */
+}
+
+.card{
+  border-radius: 8px;
+}
+.card-img-top{
+  border-radius:8px 8px 0 0;
+}
+
+/* .grayscale-effect{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+ }
+ .grayscale-effect:hover{
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+ }
+
+
+@media (min-width: 480px){
+ .effect-image-1{
+  margin:30px 0px;
+ }
+} */
+
+
+
+.navbar {
+  min-height: 80px;
+  
+}
+
+
+
+.navbar-nav{
+  margin-right: 8%;
+}
+
+.nav-item{
+  margin: 0 16px 0 16px;
+}
+
+
+
+nav .navbar-nav .active a{
+  color: #3C8AFF !important;
+  font-weight: 600;
+
+ }
+.language {
+  color:#666666;
+}
+.language a{
+  color: #666666;
+  text-decoration: none;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.language .clickable {
+  color:#dcdcdc;
+  text-decoration: none;
+}
+ 
+.navbar-brand {
+  padding: 0 12px;
+  height: 80px;
+  line-height: 80px;
+}
+
+#logo{
+  margin-left: 2vh;
+}
+.language{
+  margin-right: 2vh;
+}
+
+
+@media (min-width: 768px) {
+ 
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
+
+
+/* @media (min-width: 576px) and (max-width: 767.98px) { 
+  #logo{
+    margin-left: -2vh;
+  }
+ } */
+ @media (max-width: 575.98px) { 
+  #logo{
+    margin-left: 0;
+  }
+
+  .language {
+  color: #666666;
+   position: inherit;
+   margin-left: 7vh;
+  }
+  .non-clickable, em{
+    display: none;
+  }
+}
+
+
+  
+
