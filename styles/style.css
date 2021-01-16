@@ -289,6 +289,8 @@ span{
   fill: blue;
 }
 
+
+
 .hover {
   transition: all 0.2s ease-in-out;
 } 
@@ -817,10 +819,21 @@ h3{
   color:#588E11;
   /* color: #212121; */
   font-weight: 700 !important;
-  margin-top: 6em;
+  margin-top: 5em;
   margin-bottom: 1em;
 
 }
+
+
+.h3-didi{
+  color:#FF7D41;
+  /* color: #212121; */
+  font-weight: 700 !important;
+  margin-top: 4em;
+  margin-bottom: 1em;
+
+}
+
 
 .h3-pear-sp{
   color:#588E11;
@@ -844,7 +857,7 @@ h3{
 
 
 
-.h5-21,.h5-pear{
+.h5-21,.h5-pear,.h5-didi{
   font-size: 16px;
   font-weight: bold;
   color: #333;
@@ -861,7 +874,10 @@ h3{
 } */
 
 
+.theme{  /*didi theme*/
+  color:#FF7D41;
 
+}
 
 .h6-21, .h6-21{
   font-size: 20px;
@@ -916,6 +932,10 @@ h3{
 
 .PEARsource{
   color:#588E11;
+}
+
+.DIDIsource{
+  color: #FF7D41;
 }
 
 
