@@ -413,6 +413,14 @@ nav .navbar-nav .active a{
   }
 } */
 
+@media (max-width: 768px) {
+ .pear-team{
+   margin-top: 4em;
+ }
+
+} 
+
+
 
 @media (min-width: 768px) and (max-width: 992px) { /*medium screen*/
   /* #logo{
@@ -446,8 +454,28 @@ nav .navbar-nav .active a{
   .non-clickable, em{
     display: none;
   }
+.head img{
+  margin-top: -5em;
+}
 
-  
+.header{
+  margin-bottom: 8vh;
+} 
+
+.h3-mobile{
+  margin-top: -4em;
+}
+
+.con-mobile{
+  margin-top: -12em;
+}
+
+.con-mobile-design{
+  margin-top: -5em;
+}
+
+
+
 
 
 }
@@ -786,6 +814,8 @@ a:hover{
 
 }
 
+
+
 /* 
 .type-content{ 
   color: #666;
@@ -795,7 +825,6 @@ a:hover{
   font-size: 12px;
   color: #acacac !important;
   margin-bottom: 1em;
-  
 
  
 }
@@ -859,9 +888,17 @@ h3{
   font-weight: 700 !important;
 }
 
+.h3-21-sp{
+  color: #4F92A0;
+  font-weight: 700 !important;
+  margin-top: -8em;
+  margin-bottom: -6em;
+}
+
+
+
 .h3-21-sp-2{
   color: #4F92A0;
-
   font-weight: 700 !important;
 }
 
