@@ -257,7 +257,8 @@ p, h3, h5, h6, .navbar-brand{
         position: fixed;
         z-index: 2;
         height: 64px;
-      
+     
+	top:0;
       }
 /* nav end  nav end  nav end  nav end   nav end  nav end  nav end  nav end  nav end  nav end  nav end  nav end  nav end  */
 
