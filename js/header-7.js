@@ -1,6 +1,22 @@
 let navToggle = document.querySelector(".nav__toggle");
 let navWrapper = document.querySelector(".nav__wrapper");
 
+const nav = document.querySelector("#my-nav")
+    let lastScrollY = window.scrollY;
+
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY <= 80 ){
+
+      }else if(lastScrollY < window.scrollY){
+        nav.classList.add("nav--hidden");
+      }else{
+        nav.classList.remove("nav--hidden");
+      }
+
+      lastScrollY = window.scrollY;
+    } );
+
 navToggle.addEventListener("click", function () {
   if (navWrapper.classList.contains("active")) {
     this.setAttribute("aria-expanded", "false");
