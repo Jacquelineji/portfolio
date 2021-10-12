@@ -9,6 +9,7 @@ body{
   font-family: 'Nunito Sans', sans-serif;
   padding-top: 16em;
   line-height: 1.6;
+  font-size: 18px;
 
 }
 
@@ -29,6 +30,10 @@ body{
   padding-top: 24vh;
 }
 
+.design-container{
+  padding-top: 0vh !important;
+
+}
 
 .nav__item a {
   display: block;
@@ -457,7 +462,6 @@ p, h3, h5, h6{
   font-size: 40px;
   font-weight: bold;
   color: var(--black);
-  margin-top: 4vh;
   line-height: 48px;
 }
 
@@ -473,11 +477,15 @@ p, h3, h5, h6{
 
 .pd{
   border-radius: 1000px !important;
+  width: 50% !important;
 }
 
 
 
-
+.grey-text{
+  color: var(--grey) ;
+  font-size: 14px;
+}
 #logo {
   width: 20%;
 }
@@ -732,6 +740,10 @@ span{
 }
 
 
+.img-round{
+  border-radius: 4px;
+}
+
 
 /* projects end */
 
@@ -881,12 +893,13 @@ a:hover{
 
   .badge{
     font-weight: 600;
-    color: var(--black02);
-    background-color: var(--lightGrey03);
+    color: #5075A7;
+    background-color: #F6F7FA;
     border-radius: 0.4em;
     padding: 0.4em 0.6em;
     margin-right: 0.4em;
     letter-spacing: 0.06em;
+
   }
 .project-head{
  margin-top: 8vh;
@@ -929,7 +942,7 @@ h3{
 
 
 
-.h3-21, .h3-didi, .h3-pear, .h3-design{
+.h3-21, .h3-didi, .h3-pear{
 
   font-weight: 700 !important;
   margin-top: 6em;
@@ -938,9 +951,16 @@ h3{
 }
 
 
+.h3-design{
 
+  font-weight: 700 !important;
+  margin-top: 6em;
 
+}
 
+.design-title{
+  margin-bottom: 2em;
+}
 
 
 
@@ -1001,13 +1021,7 @@ h3{
 
 
 
-.h5-design{
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--black);
-  margin-top: 6em;
-  margin-bottom: 1em;
-}
+
 
 .h5-didi-sp{
   font-size: 16px;
