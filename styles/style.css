@@ -576,15 +576,29 @@ span{
 
 
 /* hover-overlay transform */
-/* .hover:hover{ 
-  transform: translateY(-4px) scale(1.01);
-  box-shadow: 6px 6px 32px rgba(0, 3, 81, 0.2) ;
-} 
-
- */
 
 
 
+
+.img-wrapper {
+  
+  display: inline-block;
+  overflow: hidden;
+
+}
+
+
+.img-wrapper img {
+  transition: transform 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.01s;
+  display: block;
+}
+
+.card:hover img{
+  transform: scale(1.1);
+
+}
 
 
      @media(min-width:600px){
