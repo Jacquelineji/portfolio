@@ -81,6 +81,7 @@ body{
 
 
 
+
 /* language start */
 
 
@@ -268,7 +269,10 @@ p, h3, h5, h6{
 
     font-size: 32px !important;
   }
-
+  
+ .icon-hide{
+   display: none !important;
+ }
   .nav__toggle {
     border: none;
     background: none;
@@ -282,8 +286,10 @@ p, h3, h5, h6{
 
     display: none; 
   }
-  
-  
+
+
+
+
 
 
 /* menu button end */
@@ -309,6 +315,7 @@ p, h3, h5, h6{
       display: inline-block;
       align-items: flex-end;
      } }
+     
 
      
 
@@ -466,11 +473,6 @@ p, h3, h5, h6{
   line-height: 48px;
 }
 
-.about-text{
-  padding-left: 2em;
-  padding-right: 8em;
-}
-
 
 .header{
   margin-top: 4vh;
@@ -600,10 +602,6 @@ span{
  }
  
 
- .about-text{
-  padding-left: 0;
-  padding-right: 0;
-}
 .pd{
   width: 60% !important;
   margin-top: 2em;
@@ -649,12 +647,6 @@ span{
     max-width: 100%;
     margin-left: 20px;
   }
-
-
- .about-text{
-  padding-left: 2;
-  padding-right: 0;
-}
 
 
 
@@ -910,6 +902,12 @@ a:hover{
 
     margin-bottom: 8vh;
   }
+
+  .my-col{
+
+    margin-bottom: 8vh;
+  }
+
 
 
   .project-title{
