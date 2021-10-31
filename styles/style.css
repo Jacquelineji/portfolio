@@ -453,13 +453,13 @@ p, h3, h5, h6{
 
 .intro{
   font-size: 18px;
-  color: var(--black);
+  color: var(--black02);
   margin-top: 1vh;
 }
 
 .company{
-  font-weight: bold;
-  color: var(--black);
+  /* font-weight: bold; */
+  color: var(--black02);
 }
 
 .about{
@@ -956,6 +956,12 @@ a:hover{
     margin-right: 0.4em;
     letter-spacing: 0.06em;
 
+  }
+
+  .cap-tags span{
+    font-size: 14px;
+    color: var(--black02);
+    font-weight: normal !important;
   }
 .project-head{
  margin-top: 8vh;
