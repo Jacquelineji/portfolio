@@ -557,6 +557,7 @@ span{
   border: none;
   border-radius: 0;
   padding: 0.4em;
+padding-bottom: 2em;
 }
 
 .card-body{
