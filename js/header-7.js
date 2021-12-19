@@ -5,6 +5,7 @@ let iconToggle = document.querySelector("icon-toggle");
 
 
 
+
 const nav = document.querySelector("#my-nav")
     let lastScrollY = window.scrollY;
 
@@ -42,5 +43,61 @@ navToggle.addEventListener("click", function () {
 
   }
 });
+
+// animate - jac
+
+document.querySelector('body')
+    .addEventListener('mousemove', eyeball);
+    
+    
+    function eyeball(event){
+      var eye = document.querySelectorAll('.eye');
+      var mouseX = event.clientX;
+       var mouseY = event.clientY;
+
+     
+      eye.forEach(function(eye){
+        let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
+        let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
+       
+
+        if (mouseX <= x ){
+          if (mouseY <= y ){
+          eye.style.transform = "translate(-2px,-2px)";
+
+}else{
+  eye.style.transform = "translate(-2px,2px)";
+}
+
+}else{
+  if (mouseY <= y ){
+          eye.style.transform = "translate(0,-2px)";
+
+}else{
+  eye.style.transform = "translate(0,2px)";
+}
+
+}
+
+
+      })
+    }
+
+
+// hide emoji
+
+let face = document.querySelector(".face");
+let snowflakes = document.querySelector(".snowflakes");
+
+snowflakes.style.visibility = "hidden";
+
+face.addEventListener('mouseenter', e => {
+  snowflakes.style.visibility = "visible";
+});
+face.addEventListener('mouseleave', e => {
+  snowflakes.style.visibility = "hidden";
+});
+
+
 
 

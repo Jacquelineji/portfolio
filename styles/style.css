@@ -26,6 +26,12 @@ body{
   --nav-height:74px;
 }
 
+/* temp */
+.alert{
+margin-top: -2em;
+}
+/* temp */
+
 
 .container{ 
   padding-top: 24vh;
@@ -49,6 +55,115 @@ body{
 
 }
 
+/* jac-animate */
+.animate-jac{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  float: right;
+  border-radius: 16px;
+}
+.face{
+  position: relative;
+  width: 48vh;
+  height: 48vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background-image: url("../image/animate.gif");
+  background-size: 48vh 48vh;
+  border-radius: 16px;
+}
+
+.face::before{
+  content: '';
+  position: absolute;
+  top: 56%;
+  left: 94%;
+  width:10px;
+  height: 20px;
+  background: #FF81F2;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: 0.5s;
+}
+
+.face:hover::before{
+  /* top: -10px; */
+  
+  left: 92%;
+  width:18px;
+  height: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  transition: all 100ms;
+
+}
+
+.face:hover{
+
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥳</text></svg>") 16 0,auto; 
+}
+.eyes{
+  position: relative;
+  top: 9%;
+  left: 39%;
+
+  
+}
+
+.eyes .eye{
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: block;
+  /* background: white; */
+  margin: 38px 0;
+  border-radius: 50%;
+  transition: all 300ms;
+}
+
+.eyes .eye::before{
+content: '';
+position: absolute;
+top:50%;
+left:25px;
+transform: translate(-50%,-50%);
+
+width: 26px;
+height: 18px;
+background: #69AAFF;
+border-radius: 12px;
+
+}
+
+
+
+
+
+
+
+
+/* fallling emojis */
+/* snowflakes */
+
+
+.snowflakes {
+  overflow: hidden;
+  color: #fff;
+  font-size: 1.5em;
+  /* text-shadow: 0 0 1px #000; */
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+
+/* jac-animate end  */
 
 
 
@@ -197,6 +312,10 @@ p, h3, h5, h6{
 
 
 @media (max-width: 659px) {
+
+  .alert{
+    margin-top: 2em;
+  }
 
   .navbar-brand {
     padding: 0 0;
@@ -379,7 +498,8 @@ p, h3, h5, h6{
         padding-left:1rem;
         padding-right:1rem;
         margin-left:auto;
-        margin-right:auto
+        margin-right:auto;
+        
       }
         
       /* *,*:before,*:after{
@@ -500,12 +620,12 @@ p, h3, h5, h6{
   width: 20%;
 }
 
-.header img{
-  width: 48vh;
+.header img, .animate-jac{
+  /* width: 48vh; */
   float: right;
 }
 
-.header img{
+.header img, .animate-jac{
   border-radius: 8px;
 }
 
@@ -613,12 +733,13 @@ span{
 
 
 @media (max-width: 768px) {
-  .header img{
+  .header img, .animate-jac{
     float: left;
   }
  .pear-team{
    margin-top: 4em;
  }
+ 
  
 
 .pd{
@@ -645,6 +766,25 @@ span{
 
 }
 
+@media (max-height: 575.98px) { 
+  .eyes .eye::before{
+    width: 4.5vh;
+    height: 3vh;
+    top:50%;
+    left:5vh;
+    /* transform: translate(-50%,-50%); */
+
+  }
+  .eyes .eye{
+    margin: 2vh 0;
+  }
+  
+  .face::before{
+    display: none;
+  }
+  
+}
+
 
 @media (min-width: 768px) and (max-width: 992px) { /*medium screen*/
 
@@ -659,12 +799,18 @@ span{
     font-size: 24px;
   }
 
-  .catchphrase{
+  /* .catchphrase{
     margin-left: 20px;
-  }
+  } */
   .intro, .catchphrase-2{
     max-width: 100%;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+  }
+
+  .header img, .animate-jac{
+    /* width: 48vh; */
+    margin-top: 2em;
+    float: left;
   }
 
 
@@ -870,7 +1016,7 @@ html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,
 .wrap{width:100%;} */
 
 .gradient-text, .gradient-link{
-  background: linear-gradient(to right, #237bff, #e05ed3, #fd8802);
+  background: linear-gradient(to right, #92C4FF, #DE81FF, #8470FF);
 
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
@@ -891,7 +1037,7 @@ html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,
 .gradient-text:hover{
   color:rgba(0,0,0,0);
 
-  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🥳</text></svg>") 16 0,auto; 
+
 }
 @keyframes rainbow { 
   0%{background-position:left}
