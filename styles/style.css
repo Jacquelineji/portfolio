@@ -67,9 +67,7 @@ margin-top: -2em;
   position: relative;
   width: 48vh;
   height: 48vh;
-
   display: flex;
-
   justify-content: center;
   align-items: center;
   background-image: url("../image/animate.gif");
@@ -285,6 +283,7 @@ p, h3, h5, h6{
 
 
   @media (min-width: 660px) {
+
     /* .site-header{
       margin-top: 2em;
     } */
@@ -313,9 +312,30 @@ p, h3, h5, h6{
 
 @media (max-width: 659px) {
 
+
+
+  
+  .face::before{
+    content: '';
+    position: absolute;
+    top: 56%;
+    left: 94%;
+    width:10px;
+    height: 20px;
+    background: #FF81F2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    transition: 0.5s;
+  }
+
+
   .alert{
     margin-top: 2em;
   }
+
+
 
   .navbar-brand {
     padding: 0 0;
@@ -417,6 +437,35 @@ p, h3, h5, h6{
 
 
   @media (max-width: 659px) {
+
+    .face{
+      width: 40vh;
+      height: 40vh;
+      background-size: 40vh, 40vh;
+
+    }
+  
+    .eyes .eye::before{
+      width: 3.5vh;
+      height: 2.5vh;
+      top:50%;
+      left:3vh;
+      /* transform: translate(-50%,-50%); */
+  
+    }
+    .eyes .eye{
+      margin: 3vh 0;
+    }
+    
+    /* .face::before{
+      display: block;
+    }
+     */
+  
+  
+  
+
+
     .container{
       padding-top: 8vh !important;
     }
@@ -426,6 +475,7 @@ p, h3, h5, h6{
       background-color: white;
     
     }
+
 
 
 
@@ -786,6 +836,8 @@ span{
 }
 
 
+
+
 @media (min-width: 768px) and (max-width: 992px) { /*medium screen*/
 
   
@@ -812,6 +864,7 @@ span{
     margin-top: 2em;
     float: left;
   }
+
 
 
 
