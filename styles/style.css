@@ -24,6 +24,7 @@ body{
   --greyHover:#F2F3F5;
   --lightGrey03:#F5F6F6;
   --nav-height:74px;
+  
 }
 
 /* temp */
@@ -62,6 +63,7 @@ margin-top: -2em;
   box-sizing: border-box;
   float: right;
   border-radius: 16px;
+
 }
 .face{
   position: relative;
@@ -438,25 +440,9 @@ p, h3, h5, h6{
 
   @media (max-width: 659px) {
 
-    .face{
-      width: 40vh;
-      height: 40vh;
-      background-size: 40vh, 40vh;
+  
+  
 
-    }
-  
-    .eyes .eye::before{
-      width: 3.5vh;
-      height: 2.5vh;
-      top:50%;
-      left:3vh;
-      /* transform: translate(-50%,-50%); */
-  
-    }
-    .eyes .eye{
-      margin: 3vh 0;
-    }
-    
     /* .face::before{
       display: block;
     }
@@ -784,8 +770,22 @@ span{
 
 @media (max-width: 768px) {
   .header img, .animate-jac{
-    float: left;
+    float: none;
+    justify-content: center;
   }
+  .catchphrase{
+    margin-top: 8vh;
+  }
+
+  .intro{
+    margin-bottom:6vh ;
+  }
+
+  .catchphrase, .intro{
+    text-align: center;
+    
+  }
+
  .pear-team{
    margin-top: 4em;
  }
@@ -815,26 +815,6 @@ span{
 
 
 }
-
-@media (max-height: 575.98px) { 
-  .eyes .eye::before{
-    width: 4.5vh;
-    height: 3vh;
-    top:50%;
-    left:5vh;
-    /* transform: translate(-50%,-50%); */
-
-  }
-  .eyes .eye{
-    margin: 2vh 0;
-  }
-  
-  .face::before{
-    display: none;
-  }
-  
-}
-
 
 
 
@@ -874,6 +854,18 @@ span{
 
 
  @media (max-width: 575.98px) { 
+  
+  .animate-jac{
+    float: none;
+    margin: 0 auto;
+  justify-content: center;
+
+  }
+  .face{
+    width: 80vw;
+    height: 80vw;
+    background-size: 80vw, 80vw;
+  }
 
   #logo{
     margin-left: 0;
@@ -918,8 +910,44 @@ span{
 
 }
 
+@media (max-width: 320px) {
+
+
+  .face::before{
+
+    top: 44vw;
+    left: 74vw;
+    width:10px;
+    height: 20px;
+
+  }
+  .eyes .eye{
+
+    margin: 8vw 0;
+  }
+  
+  .eyes .eye::before{
+
+
+  left:60%;
+  
+  width: 7vw;
+  height: 5vw;
 
   
+  }
+  
+  
+
+}
+@media (max-width: 250px){
+
+  .face::before{
+
+    display: none;
+
+  }
+}
 
 /*demo*/
 
