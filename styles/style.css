@@ -84,7 +84,7 @@ margin-top: -2em;
   left: 94%;
   width:10px;
   height: 20px;
-  background: #FF81F2;
+  background: #ECA49A;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 4px;
@@ -138,7 +138,7 @@ transform: translate(-50%,-50%);
 
 width: 26px;
 height: 18px;
-background: #69AAFF;
+background: #7DAAB6;
 border-radius: 12px;
 
 }
@@ -324,12 +324,7 @@ p, h3, h5, h6{
     left: 94%;
     width:10px;
     height: 20px;
-    background: #FF81F2;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    transition: 0.5s;
+
   }
 
 
