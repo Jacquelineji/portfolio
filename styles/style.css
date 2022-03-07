@@ -593,11 +593,11 @@ p, h3, h5, h6{
 
 .catchphrase{
   font-family: "DM Serif Display", serif;
-  font-size: 72px;
+  font-size: 56px;
 
   color: var(--black);
   margin-top: 15vh; /* head text distance to top*/
-  line-height: 84px;
+  line-height:72px;
 }
 
 
@@ -616,7 +616,7 @@ p, h3, h5, h6{
 
 .intro{
   font-size: 18px;
-  color: var(--black02);
+  /* color: var(--black02); */
   margin-top: 1vh;
 }
 
@@ -1195,10 +1195,13 @@ html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,
   /* font-weight:900; */
 }
 
+.gradient-text{
+  color:rgba(0,0,0,0);
+
+}
 
 .gradient-text:hover{
   color:rgba(0,0,0,0);
-
 
 }
 @keyframes rainbow { 
