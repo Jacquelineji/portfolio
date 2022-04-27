@@ -593,18 +593,19 @@ p, h3, h5, h6{
 
 .catchphrase{
   font-family: "DM Serif Display", serif;
-  font-size: 56px;
-
+  font-size: 72px;
   color: var(--black);
-  margin-top: 15vh; /* head text distance to top*/
-  line-height:72px;
+  margin-top: 15vh; 
+  line-height: 84px;
 }
 
 
 .catchphrase-2{
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--black);
+  /* margin-top: 15vh; */
+  font-size:24px;
+  /* font-weight: 600; */
+  color: var(--black02);
+
 }
 
 .jp-bk{
@@ -615,9 +616,12 @@ p, h3, h5, h6{
 }
 
 .intro{
-  font-size: 18px;
-  /* color: var(--black02); */
+  font-size: 20px;
+  color: var(--black02);
   margin-top: 1vh;
+  font-weight: 600;
+  margin-top: 2vh;
+
 }
 
 .company{
@@ -1146,6 +1150,10 @@ html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,
 .contact-link{
   font-weight: 600 !important;
 }
+.email-link{
+  color: var(--black);
+  font-weight: 600 !important;
+}
 
 .outro p:first-child{
   font-weight: bold;
@@ -1195,13 +1203,12 @@ html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,
   /* font-weight:900; */
 }
 
-.gradient-text{
-  color:rgba(0,0,0,0);
 
-}
+
 
 .gradient-text:hover{
   color:rgba(0,0,0,0);
+
 
 }
 @keyframes rainbow { 
@@ -1499,10 +1506,12 @@ h3{
 
 
 .problem-card{
-  box-shadow: 8px 8px 12px rgba(73, 74, 102, 0.08);
-  border-radius: 8px;
+  box-shadow: 0px 0px 16px rgba(73, 74, 102, 0.12) !important;
+  border-radius: 16px !important;
   
 }
+
+
 .problem p{
   font-size: 18px;
   margin-top: 1em;
