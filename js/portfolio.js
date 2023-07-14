@@ -6,22 +6,6 @@ let iconToggle = document.querySelector("icon-toggle");
 
 
 
-const nav = document.querySelector("#my-nav")
-    let lastScrollY = window.scrollY;
-
-
-    window.addEventListener("scroll", () => {
-      if (window.scrollY <= 80 ){
-
-      }else if(lastScrollY < window.scrollY && !navWrapper.classList.contains("active")){
-        nav.classList.add("nav--hidden");
-      }else{
-        nav.classList.remove("nav--hidden");
-      }
-
-      lastScrollY = window.scrollY;
-    } );
-
 
 
 
@@ -89,11 +73,13 @@ document.querySelector('body')
 let face = document.querySelector(".face");
 let snowflakes = document.querySelector(".snowflakes");
 
+
 snowflakes.style.visibility = "hidden";
 
 face.addEventListener('mouseenter', e => {
   snowflakes.style.visibility = "visible";
 });
+
 face.addEventListener('mouseleave', e => {
   snowflakes.style.visibility = "hidden";
 });
